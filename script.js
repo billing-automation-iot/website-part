@@ -5,7 +5,7 @@ let stream;
 navigator.mediaDevices.enumerateDevices()
     .then(devices => {
         const videoDevices = devices.filter(device => device.kind === 'videoinput');
-        const videoSource = videoDevices[0]; // Change this to select the correct device
+        const videoSource = videoDevices[1]; // Change this to select the correct device
 
         return navigator.mediaDevices.getUserMedia({
             video: {
