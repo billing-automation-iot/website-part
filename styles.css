@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, color 0.5s;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+    }
+}
+/* Styles for mobile phones */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    header, main, footer {
+        padding: 10px;
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#video {
+    width: 80vw; /* Adjust the percentage as needed */
+    height: 400px;
+    margin-top: 20px;
+  }
+  
+@media screen and (max-width: 1024px) { /* Target laptops typically around 1024px */
+    #video {
+      width: 50%; /* Adjust the percentage as needed */
+    }
+  }
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.light-icon {
+    fill: #000;
+}
+
+.dark-icon {
+    fill: #fff;
+}
+
+body.dark .light-icon {
+    display: none;
+}
+
+body.light .dark-icon {
+    display: none;
+}
+body.light {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark {
+    background-color: #ffffff;
+    color: #000000;
+}
