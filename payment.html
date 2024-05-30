@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
     <!-- Add your CSS file here -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
-    <header>
-        <h1>Swiftscan Automated Cart System</h1>
-    </header>
-    <main>
-        <!-- Add your payment gateway here -->
-        <h2>Payment</h2>
-    </main>
-    <footer>
-        <p>&copy; 2024 Swiftscan</p>
-    </footer>
-    <!-- Add your JavaScript file here -->
-    <script src="script.js"></script>
+    <section id="payment-home">
+        <div class="header">
+            <header class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-text">swiftscan</span>
+                </a>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button type="button" class="menu-button">
+                    <img src="menu.svg" alt="Menu Button" class="menu-icon">
+                </button>
+            </header>
+        </div>
+        
+        <section id="payment">
+            <div class="container">
+                <div class="amount-section">
+                    <h2>Total Amount to Pay</h2>
+                    <p class="amount">Rs.100.00</p>
+                </div>
+                <div class="qr-section">
+                    <h2>Scan to Pay</h2>
+                    <img src="qrcode.webp" alt="QR Code" class="qr-code">
+                </div>
+            </div>
+        </section>
+        <footer class="foot">
+            <p>swiftscan Technologies</p>
+        </footer>
+    </section>
 </body>
 </html>
