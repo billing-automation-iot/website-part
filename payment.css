@@ -14,7 +14,7 @@ body {
 }
 
 #payment-home {
-    min-height: 90vh;
+    min-height: 95vh;
     margin: 20px;
     border: 2px solid black;
     border-radius: 30px;
@@ -31,8 +31,8 @@ body {
 }
 
 .header-content {
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 80vw;
+    margin: 14px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,13 +119,14 @@ body {
 
 .amount-section, .qr-section {
     flex: 1;
-    padding: 20px;
+    padding: 35px;
     text-align: center;
 }
 
 .amount-section {
     background-color: #007BFF;
     color: white;
+    height: 444px;
 }
 
 .amount-section h2, .amount-section p {
@@ -164,7 +165,6 @@ body {
 
 @media screen and (max-width: 650px) {
     .amount-section h2, .amount-section p {
-        /* margin-top: 50px; */
         font-size: 25px;
     }
 }
@@ -172,7 +172,6 @@ body {
 
 @media screen and (max-width: 650px) {
     .qr-section h2 {
-        /* margin-top: 0px; */
         font-size: 25px;
     }
     .qr-section img{
@@ -190,7 +189,6 @@ body {
     }
 
     .amount-section h2, .amount-section p {
-        /* margin-top: 50px; */
         font-size: 15px;
     }
 
@@ -199,7 +197,6 @@ body {
     }
 
     .qr-section h2 {
-        /* margin-top: 0px; */
         font-size: 15px;
     }
     .qr-section img{

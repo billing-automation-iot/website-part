@@ -17,6 +17,7 @@ body {
 #home{
     border: 2px solid black;
     border-radius:30px ;
+    min-height: 95vh;
 }
 .header {
     background-color: aquamarine;
@@ -26,7 +27,7 @@ body {
 }
 
 .header-content {
-    max-width: 1280px;
+    max-width: 80vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -84,8 +85,8 @@ body {
     width: 1.5rem;
 }
 #products {
-    padding: 65px;
-    margin: 95px;
+    padding: 75px;
+    margin: 120px;
 }
 
 .container {
@@ -98,7 +99,7 @@ body {
 }
 
 .cart h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -139,13 +140,20 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
     body {
         font-size: 14px;
     }
-
+    .cart{
+        padding: 102px 0;
+        margin: 100px 0;
+    }
     header{
         padding: 15px;
+    }
+    #products{
+        padding: 0px;
+        margin: 6px;
     }
 }
 
@@ -153,9 +161,13 @@ body {
     body {
         font-size: 12px;
     }
-    #products{
-        padding: 10px;
-        margin: 10px;
+    .cart{
+        padding: 100px 0;
+        margin: 105px 0;
+    }
+    #cart-table th, #cart-table td {
+        padding: 6px;
+        border: 2px solid #150303;
     }
     footer {
         padding: 0px;
@@ -183,36 +195,4 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#themeToggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.light-icon {
-    fill: #000;
-}
-
-.dark-icon {
-    fill: #fff;
-}
-
-body.dark .light-icon {
-    display: none;
-}
-
-body.light .dark-icon {
-    display: none;
-}
-
-body.light {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-body.dark {
-    background-color: #ffffff;
-    color: #000000;
 }
